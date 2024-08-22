@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 .bg_img{
-  background-image: url("../public/html_css.jpeg");
+  background-image: url("../public/html_css.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }

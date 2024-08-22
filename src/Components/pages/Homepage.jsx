@@ -12,7 +12,7 @@ const Homepage = () => {
               className="bg_img w-[65%] bg-[#2e6259] z-10 overflow-hidden rounded inset_shadow"
             >
               <div className="bg-[#0000007e]">
-              <img src="/dev_b.png" alt="" className="object-cover" />
+              <img src="/dev_b.webp" alt="" className="object-cover" />
               </div>
             </div>
             <div
