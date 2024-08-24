@@ -4,8 +4,9 @@ import Homepage from './pages/Homepage'
 
 const Home = () => {
   return (
+    // bg-[#02021e]
     <>
-      <div className="bg-[#064369b1] h-[100vh]">        
+      <div className="bg_img h-[100vh]">        
       <Navbar />
       <Homepage/>
       </div>

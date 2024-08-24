@@ -17,7 +17,7 @@ const Navbar = () => {
     <>   
         <div className="flex justify-center items-center p-[5px]">
           <div
-            className="bg-[#00000063] text-[white] rounded shadow-2xl shadow-[#000000aa] flex justify-around items-center gap-[20px] w-[900px] mt-[10px]"
+            className="border-t-[1px] border-b-[1px] border-[white] text-[white] flex justify-around items-center gap-[20px] w-[900px] mt-[10px]"
             data-aos="fade-down"
             data-aos-duration="1000"
           >

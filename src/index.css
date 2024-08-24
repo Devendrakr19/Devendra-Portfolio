@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 .bg_img{
-  background-image: url("../public/html_css.webp");
+  background-image: url("../public/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -18,5 +18,8 @@
 }
 
 .name{
-  text-shadow: -16px 6px 14px black;
+  text-shadow: -16px 6px 14px rgba(0, 0, 0, 0.746);
+  /* background: linear-gradient(to right, #c3ff00 0%, #00ffe1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }

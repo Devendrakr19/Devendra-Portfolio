@@ -9,10 +9,10 @@ const Homepage = () => {
             <div
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-              className="bg_img w-[65%] bg-[#2e6259] z-10 overflow-hidden rounded inset_shadow"
+              className="bg_img w-[65%] z-10 overflow-hidden rounded inset_shadow"
             >
               <div className="bg-[#0000007e]">
-              <img src="/dev_b.webp" alt="" className="object-cover" />
+              <img src="/dev.webp" alt="" className="object-cover" />
               </div>
             </div>
             <div
@@ -29,12 +29,15 @@ const Homepage = () => {
         </div>
         <div className="col-span-1">
           <div className="pr-[10px]">
-            {/* <h1 className="text-[90px] font-bold text-[#e7e72d] text-center">𝕯𝖊𝖛𝖊𝖓𝖉𝖗𝖆 𝕶𝖚𝖒𝖆𝖗 𝕻𝖆𝖓𝖉𝖎𝖙</h1> */}
-
-            <h1 className="name text-[60px] font-bold text-[#e7e72d] text-center mt-[60px]">
-              D̷̢̨̛̩͈̼͎̠͙̥̈e̶̻̹͔̝̥̐̿̃̾̐͆͊́v̸̪̥̬̪̈̎̈́̔͜͜e̴̡̾n̶̛̮̖̖̺̙͓̋̀̇̂̃́͌́͘͜d̵̞͖̤͔̄̋̅̓̓̀̒̆̀͛r̵̫̮͙̩͍̾̈̋̕̕̚ả̷̪̲͖̟͇̥͍̘̒̐̽ ̷͎͙̦̿̒̍̚͠Ķ̶̡͈͇͔͉̱̹̽̄͊̀͗͘̚u̷͇̪̩̘̮͛̆̉́͂͐̇͂̎͘m̶̧̒ạ̷̧̟̗̩̳̠̩͉͠ͅr̶̭̩̺̺̃͆̅ ̴̧̜͋̎̎̋͗͗̓̓͗͘Ṕ̸̠̂̐͒̈̒̕ͅá̶̻̈́̀ñ̸̛̥̝̩̭̇́̄̑͊͘̚͝d̴̢̤̣̙̯͊́͂̏̀̓͒͋̈͂ͅi̷̡̩̲͊̐̃̆͌́t̶̞̿͊͒͜
-            </h1>
-            <p className="name text-[70px] text-[white] text-center mt-[100px]">
+            <h1
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              className="name text-[70px] font-bold text-[#fff] text-center">𝓓𝓮𝓿𝓮𝓷𝓭𝓻𝓪 𝓚𝓾𝓶𝓪𝓻 𝓟𝓪𝓷𝓭𝓲𝓽</h1>
+            {/* <h1 className="name text-[70px] font-bold text-[#fff] text-center">Devendra Kumar Pandit</h1> */}
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="text-[60px] text-[white] text-center mt-[10px]">
             ₛₒ<span className="text-[yellow]">f</span>ₜ<span className="text-[#00f7ff]">w</span>ₐᵣₑ <span className="text-[#00ffaa]">D</span>ₑᵥₑₗₒₚₑᵣ  
             </p>
           </div>
