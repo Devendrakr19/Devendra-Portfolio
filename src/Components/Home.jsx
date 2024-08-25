@@ -1,18 +1,20 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Homepage from "./pages/Homepage";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 
 const Home = () => {
+
   return (
-    // bg-[#02021e]
     <>
       <div className="bg-[#02021e]">
-        <div className="bg_img px-[10px] py-[10px]">
-          <Navbar />
-          <Homepage />
-        </div>
-        <About />
+        <Homepage id="homepage"/>
+        <About id="about" />
+        <Projects id="projects" />
+        <Skills id="skills" />
+        <Contact id="contact"/>
       </div>
     </>
   );

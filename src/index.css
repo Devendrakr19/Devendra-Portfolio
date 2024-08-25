@@ -8,17 +8,26 @@
   margin: 0px;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+
 h1, p{
   color: white;
 }
+
 .bg_img{
-  background-image: url("../public/bg.webp");
+  background-image: url("../bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom-left-radius: 15%;
   border-bottom-right-radius: 15%;
 }
-.bg_img1{
+.box_shodow{
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .name{
@@ -27,10 +36,10 @@ h1, p{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
-.name1{
+.job_title{
   text-shadow: -16px 6px 14px rgba(0, 0, 0, 0.465);  
 }
-.about-card {
+.about_card {
   background: linear-gradient(71deg, #000000, #1a171c, #010110);
   background-clip: padding-box;
   border-radius: 20px;
@@ -38,12 +47,46 @@ h1, p{
   border-left: transparent;
   border-right: transparent;
 }
-.about-card h1{
+.about_card h1{
   text-align: center;
   font-weight: 600;
 }
-.about-card p{
+.about_card p{
   text-align: center;
   margin-top: 5px;
 }
 
+.intro_card {
+  background: linear-gradient(71deg, #000000, #1a171c, #010110);
+  background-clip: padding-box;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border-top: transparent;
+  border-bottom: transparent;
+  /* border-left: transparent;
+  border-right: transparent; */
+}
+
+.project{
+  border-radius: 50%;
+}
+/* 
+.skill_bg_img{
+  background-image: url("../splash.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+
+
+/* <div
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
+  >
+  </div> */
