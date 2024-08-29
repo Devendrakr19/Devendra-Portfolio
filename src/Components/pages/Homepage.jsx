@@ -4,7 +4,7 @@ import Navbar from "../Navbar";
 const Homepage = ({id}) => {
   return (
     <>
-      <div id={id} className="bg_img px-[10px] py-[10px]">
+      <div id={id} className="bg_img">
         <Navbar/>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-[70px] gap-[20px]">
           <div className="col-span-1 mb-[200px]">
