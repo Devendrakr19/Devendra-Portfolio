@@ -55,7 +55,7 @@ const Skills = ({ id }) => {
       name: "Node & Express js",
     },
     {
-      imgs: "/logo/dj1.png",
+      imgs: "/logo/dj.png",
       name: "Django",
     },
   ];
@@ -108,16 +108,21 @@ const Skills = ({ id }) => {
 
   return (
     <>
-      <div id={id} className="mt-[40px]" data-aos="fade-up" data-aos-duration="1000">
+      <div
+        id={id}
+        className="mt-[50px]"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="">
-          <h1 className="text-[80px] text-center">Skills</h1>
+          <h1 className="component_title">Skills</h1>
           <div className="text-[white] flex justify-center gap-[30px]">
             {ButtonTab.map((item, index) => (
               <button
                 key={index}
                 onClick={() => HandleButtonTab(index)}
-                className={`text-[20px] rounded-full px-[20px] py-[2px]
-                ${BtnTab === index ? "border-b-[2px] border-[red]" : ""}
+                className={`text-[20px] rounded-full px-[20px] py-[5px]
+                ${BtnTab === index ? "border-b-[3px] border-[red] text-[yellow]" : ""}
                 `}
               >
                 {item.name}
@@ -126,52 +131,61 @@ const Skills = ({ id }) => {
           </div>
           {BtnTab === 0 && (
             <div
-              className="mt-[20px] grid grid-cols-5 gap-[20px] px-[60px] py-[20px]"
+              className="mt-[20px] flex justify-center items-center px-[60px] py-[20px]"
               data-aos="zoom-in-up"
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              {Frontend.map((frontend, index) => (
-                <div
-                  key={index}
-                  className="bg-[#ffffffb3] rounded flex justify-center items-center flex-col w-[250px] h-[240px]"
-                >
-                  <img src={frontend.imgs} alt="" className="w-[150px]" />
-                  <p className="text-[black] mt-[15px] font-medium">
-                    {frontend.name}
-                  </p>
-                </div>
-              ))}
+              <div className="grid grid-cols-4 gap-[20px]">
+                {Frontend.map((frontend, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px]"
+                  >
+                    <img src={frontend.imgs} alt="" className="w-[150px]" />
+                    <p className="text-[black] mt-[15px] font-medium">
+                      {frontend.name}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
           {BtnTab === 1 && (
-            <div className="mt-[20px] grid grid-cols-5 gap-[20px] px-[60px] py-[20px]"
+            <div
+              className="mt-[20px] flex justify-center items-center px-[60px] py-[20px]"
               data-aos="fade-right"
               data-aos-delay="500"
-              data-aos-duration="1000">
-              {Backend.map((backend, index) => (
-                <div
-                  key={index}
-                  className="bg-[#ffffffb9] rounded flex justify-center items-center flex-col w-[250px] h-[240px]"
-                >
-                  <img src={backend.imgs} alt="" className="w-[150px]" />
-                  <p className="text-[black] mt-[15px] font-medium">
-                    {backend.name}
-                  </p>
-                </div>
-              ))}
+              data-aos-duration="1000"
+            >
+              <div className="grid grid-cols-4 gap-[20px]">
+                {Backend.map((backend, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px]"
+                  >
+                    <img src={backend.imgs} alt="" className="w-[150px]" />
+                    <p className="text-[black] mt-[15px] font-medium">
+                      {backend.name}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
           {BtnTab === 2 && (
-            <div className="mt-[20px] grid grid-cols-5 gap-[20px] px-[60px] py-[20px]"
-             data-aos="fade-right"
+            <div
+              className="mt-[20px] flex justify-center items-center px-[60px] py-[20px]"
+              data-aos="fade-right"
               data-aos-delay="500"
               data-aos-duration="1000"
-              >
+            >
+              <div className="grid grid-cols-4 gap-[20px]">
+
               {Database.map((database, index) => (
                 <div
                   key={index}
-                  className="bg-[#ffffffb9] rounded flex justify-center items-center flex-col w-[250px] h-[240px]"
+                  className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px]"
                 >
                   <img src={database.imgs} alt="" className="w-[150px]" />
                   <p className="text-[black] mt-[15px] font-medium">
@@ -179,18 +193,21 @@ const Skills = ({ id }) => {
                   </p>
                 </div>
               ))}
+              </div>
             </div>
           )}
           {BtnTab === 3 && (
-            <div className="mt-[20px] grid grid-cols-5 gap-[20px] px-[60px] py-[20px]"
-             data-aos="fade-right"
+            <div
+              className="mt-[20px] flex justify-center items-center px-[60px] py-[20px]"
+              data-aos="fade-right"
               data-aos-delay="500"
               data-aos-duration="1000"
             >
+              <div className="grid grid-cols-4 gap-[20px]">
               {Languages.map((language, index) => (
                 <div
                   key={index}
-                  className="bg-[#ffffffb9] rounded flex justify-center items-center flex-col w-[250px] h-[240px]"
+                  className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px]"
                 >
                   <img src={language.imgs} alt="" className="w-[150px]" />
                   <p className="text-[black] mt-[15px] font-medium">
@@ -199,17 +216,20 @@ const Skills = ({ id }) => {
                 </div>
               ))}
             </div>
+            </div>
           )}
           {BtnTab === 4 && (
-            <div className="mt-[20px] grid grid-cols-5 gap-[20px] px-[60px] py-[20px]"
-             data-aos="fade-up"
+            <div
+              className="mt-[20px] flex justify-center items-center px-[60px] py-[20px]"
+              data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="1000"
             >
+              <div className="grid grid-cols-4 gap-[20px]">
               {Others.map((other, index) => (
                 <div
                   key={index}
-                  className="bg-[#ffffffb9] rounded flex justify-center items-center flex-col w-[250px] h-[240px]"
+                  className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px]"
                 >
                   <img src={other.imgs} alt="" className="w-[150px]" />
                   <p className="text-[black] mt-[15px] font-medium">
@@ -217,6 +237,7 @@ const Skills = ({ id }) => {
                   </p>
                 </div>
               ))}
+            </div>
             </div>
           )}
         </div>

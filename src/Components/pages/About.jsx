@@ -31,16 +31,42 @@ const About = ({ id }) => {
       grade: "CGPA : 8.2",
     },
   ];
+
+  const hobby = [
+    { name: "Playing Cricket" },
+    { name: "Listening Music" },
+    { name: "Movies/Webseries/Anime" },
+    { name: "Cooking" },
+  ];
+  const language = [
+    { name: "Hindi" },
+    { name: "English" },
+    { name: "Bhojpuri" },
+  ];
+  const softskill = [
+    { name: "Positive Attitude" },
+    { name: "Adaptability" },
+    { name: "Teamwork" },
+    { name: "Patience" },
+  ];
+  const address = [
+    { title: "Village : ", name: "Parsauna" },
+    { title: "Post Office : ", name: "Parsauna" },
+    { title: "Police Station : ", name: "Parsa" },
+    { title: "District : ", name: "Saran" },
+    { title: "Pin Code : ", name: "841219" },
+    { title: "State : ", name: "Bihar" },
+  ];
   return (
     <>
       <div
         id={id}
-        className="bg-[#02021e] pb-[20px] mt-[40px]"
+        className="bg-[#02021e] pb-[20px] mt-[50px]"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
         <div className="mt-[20px]">
-          <h1 className="text-center text-[80px]">About</h1>
+          <h1 className="component_title">About</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] px-[40px] mt-[30px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
               {AboutCard.map((about, index) => (
@@ -50,11 +76,11 @@ const About = ({ id }) => {
                   data-aos-delay="500"
                   data-aos-duration="1000"
                   className={`about_card border-[1px] min-w-[250px] border-[#03cd799e] cursor-pointer ${
-                    index === 0 ? "border-[1px] border-[#03cd799e]" : ""
+                    index === 0 ? "border-[1px] border-[#03cd799e] mca_card" : ""
                   } 
-                  ${index === 1 ? "border-[1px] border-[#ffff00ae]" : ""}
-                  ${index === 2 ? "border-[1px] border-[#ffffffae]" : ""}
-                  ${index === 3 ? "border-[1px] border-[#ff1f93ae]" : ""}
+                  ${index === 1 ? "border-[1px] border-[#ffff00ae] bsc_card" : ""}
+                  ${index === 2 ? "border-[1px] border-[#ffffffae] isc_card" : ""}
+                  ${index === 3 ? "border-[1px] border-[#ff1f93ae] matric_card" : ""}
                 `}
                 >
                   <h1 className="text-[32px]">{about.coursetitle}</h1>
@@ -81,22 +107,44 @@ const About = ({ id }) => {
                 data-aos-duration="1000"
                 className="intro_card border-[1px] border-[#03cd799e] h-[calc(100vh-162px)]"
               >
-                <h1 className="text-center text-[40px] font-serif">
-                  Introduction
+                <h1 className="text-[20px] font-medium">Hobbies & Interests</h1>
+                <div className="flex flex-wrap items-center gap-[10px] mt-[10px] mb-[10px]">
+                  {hobby.map((item, index) => (
+                    <button key={index} className="btn">
+                      {item.name}
+                    </button>
+                  ))}
+                </div>
+
+                <h1 className="text-[20px] font-medium">Languages</h1>
+                <div className="flex flex-wrap items-center gap-[10px] mt-[10px] mb-[10px]">
+                  {language.map((item, index) => (
+                    <button key={index} className="btn">
+                      {item.name}
+                    </button>
+                  ))}
+                </div>
+
+                <h1 className="text-[20px] font-medium">
+                  Interpersonal Skills
                 </h1>
-                <p className="leading-[25px]">
-                  <span className="text-[50px] text-[cyan]">𝓗𝓲</span>, My name
-                  is Deveendra Kumar Pandit. Currently, I’m working as a
-                  Full-Stack Developer at Otomashen, where I specialize in
-                  frontend development. I focus on creating user-friendly and
-                  visually appealing web interfaces using technologies like
-                  HTML, CSS, JavaScript, and React.js. My goal is to ensure that
-                  users have a seamless and engaging experience with digital
-                  products. With 8 months of experience in frontend development,
-                  I’ve had the opportunity to work on projects such as ATS.
-                  Outside of work, I’m passionate about cricket, movies and
-                  series, and cooking.
-                </p>
+                <div className="flex flex-wrap items-center gap-[10px] mt-[10px] mb-[10px]">
+                  {softskill.map((item, index) => (
+                    <button key={index} className="btn">
+                      {item.name}
+                    </button>
+                  ))}
+                </div>
+
+                <h1 className="text-[20px] font-medium">Permanent Address</h1>
+                <div className="mt-[2px]">
+                  {address.map((add, index) => (
+                    <div key={index} className="">
+                      <span className="text-[white]">{add.title}</span>
+                      <span className="text-[#c5c5c5]">{add.name}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
