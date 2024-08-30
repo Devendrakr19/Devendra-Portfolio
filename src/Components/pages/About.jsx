@@ -35,7 +35,7 @@ const About = ({ id }) => {
   const hobby = [
     { name: "Playing Cricket" },
     { name: "Listening Music" },
-    { name: "Movies/Webseries/Anime" },
+    { name: "Movies/Webseries" },
     { name: "Cooking" },
   ];
   const language = [
@@ -65,9 +65,9 @@ const About = ({ id }) => {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="mt-[20px]">
+        <div className="mt-[20px] px-[20px]">
           <h1 className="component_title">About</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] px-[40px] mt-[30px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[40px] mt-[30px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
               {AboutCard.map((about, index) => (
                 <div
@@ -100,12 +100,13 @@ const About = ({ id }) => {
                 </div>
               ))}
             </div>
+
             <div className="">
               <div
                 data-aos="fade-left"
                 data-aos-delay="500"
                 data-aos-duration="1000"
-                className="intro_card border-[1px] border-[#03cd799e] h-[calc(100vh-162px)]"
+                className="intro_card border-[1px] border-[#03cd799e]"
               >
                 <h1 className="text-[20px] font-medium">Hobbies & Interests</h1>
                 <div className="flex flex-wrap items-center gap-[10px] mt-[10px] mb-[10px]">

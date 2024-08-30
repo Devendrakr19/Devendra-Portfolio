@@ -34,9 +34,9 @@ const Navbar = () => {
           <img src="/logo/hamburger.svg" alt="" className="w-[60px]" />
         </button>
         <div
-          className="border-t-[1px] border-b-[1px] mt-[20px] border-[white] hidden text-[white] md:flex justify-around items-center min-w-[700px]"
-          // data-aos="fade-down"
-          // data-aos-duration="1000"
+          className="border-t-[1px] border-b-[1px] mt-[20px] border-[white] hidden text-[white] md:flex justify-around items-center md:min-w-[700px] lg:min-w-[800px] xl:min-w-[800px] 2xl:min-w-[1000px]"
+          data-aos="fade-down"
+          data-aos-duration="1000"
         >
           <div className="">
             <img src="/dev.svg" alt="" className="max-w-[60px]" />
@@ -45,7 +45,7 @@ const Navbar = () => {
             <div
               key={index}
               onClick={() => HandleNav(index, content.id)}
-              className={`text-[16px] relative font-medium cursor-pointer px-[10px] py-[6px] flex items-center ${
+              className={`text-[16px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] relative font-medium cursor-pointer px-[10px] py-[6px] flex items-center ${
                 NavTab === index ? "text-[yellow]" : "text-[white]"
               }`}
             >
@@ -59,7 +59,10 @@ const Navbar = () => {
       {/* Mobile view sidbar  */}
 
       {openSidebar && (
-        <div className="absolute min-w-[250px] h-full bg-[#02021e] md:hidden z-[30] px-[10px] pb-[10px]">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="absolute min-w-[250px] h-full bg-[#02021e] md:hidden z-[30] px-[10px] pb-[10px]">
           <div className="flex items-center justify-between">
             <img src="/dev.svg" alt="" className="max-w-[60px]" />
             <span
