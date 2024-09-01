@@ -20,7 +20,7 @@ const Projects = ({ id }) => {
       front-end and back-end aspects. Implemented key features, improving the platform’s overall user experience and functionality.`,
       myrole: "Full-Stack",
       tecnology:
-        "HTML5, CSS3, JavaScript, React.js, Tailwind, Material UI, Redux Toolkit, Python(Django).",
+        "HTML5, CSS3, JavaScript, React.js, Tailwind, Material UI, Redux Toolkit, Python(Django), PostgreSQL.",
       imgs: "/splash.svg",
       url: "https://www.uredx.com/",
     },
@@ -28,9 +28,12 @@ const Projects = ({ id }) => {
       projectname: "Uredx (Educational Website)",
       company: "Uredx",
       date: "13/01/2024 - 01/05/2024",
-      aboutprject: "The quick brown fox jumps over the lazy dog.",
+      aboutprject:`I was pivotal in developing various dashboards for an educational-based platform.
+      I crafted user-friendly interfaces for student, teacher, and admin dashboards, ensuring seamless navigation and
+      functionality. My internship experience provided valuable insights into front-end development in a real-world setting, honing
+      my web development and teamwork skills.`,
       myrole: "Frontend",
-      tecnology: "Html, css , Javascript , React",
+      tecnology: "HTML5, CSS3, JavaScript, React.js, Tailwind, Node.js, Express.js, MongoDB",
       imgs: "/html_css.webp",
     },
     // {

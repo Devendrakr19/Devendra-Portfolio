@@ -16,12 +16,12 @@ const Contact = ({ id }) => {
         className="mt-[50px]"
       >
         <h1 className="component_title">Contact</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-[40px]">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 px-[20px] gap-[20px] mt-[40px]">
           <div className="flex justify-center items-center">
             <div
               data-aos="zoom-in-up"
               data-aos-duration="2000"
-              className="bg-[#00000033] border-[1px] border-[#ffffff7a] w-[400px] shadow-2xl shadow-[#ffffff22] rounded h-[400px] px-[20px] py-[20px]"
+              className="bg-[#00000033] border-[1px] border-[#ffffff7a] w-[400px] h-[400px] shadow-2xl shadow-[#ffffff22] rounded px-[20px] py-[20px]"
             >
               {contact.map((item, index) => (
                 <div
@@ -41,14 +41,14 @@ const Contact = ({ id }) => {
               ))}
             </div>
           </div>
-          <div className="">
-            {/* <img src="/logo/world.svg" alt="" className="" /> */}
+          <div className="mt-[30px] sm:mt-[0px]">
             <img
               src="/logo/thought.svg"
               alt=""
-              className="ml-[-90px]"
+              className=" sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px] xl:min-w-[620px]
+              md:min-h-[300px] lg:min-h-[200px] xl:min-h-[400px] object-contain "
               data-aos="zoom-in-up"
-              data-aos-duration="3000"
+              data-aos-duration="2000"
             />
           </div>
         </div>
