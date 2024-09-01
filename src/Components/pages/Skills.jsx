@@ -116,13 +116,18 @@ const Skills = ({ id }) => {
       >
         <div className="">
           <h1 className="component_title">Skills</h1>
-          <div className="text-[white] flex justify-center gap-[30px]">
+          <div className="text-[white] flex justify-center gap-[5px] sm:gap-[1px] md:gap-[10px] lg:gap-[30px] xl:gap-[50px] 2xl:gap-[70px]">
             {ButtonTab.map((item, index) => (
               <button
                 key={index}
                 onClick={() => HandleButtonTab(index)}
-                className={`text-[20px] rounded-full px-[20px] py-[5px]
-                ${BtnTab === index ? "border-b-[3px] border-[red] text-[yellow]" : ""}
+                className={`text-[13px] sm:text-[14px] md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] rounded-full
+                 px-[8px] sm:px-[20px]  py-[5px]
+                ${
+                  BtnTab === index
+                    ? "border-b-[3px] border-[red] text-[yellow]"
+                    : ""
+                }
                 `}
               >
                 {item.name}
@@ -131,16 +136,16 @@ const Skills = ({ id }) => {
           </div>
           {BtnTab === 0 && (
             <div
-              className="mt-[20px] flex justify-center items-center px-[60px] py-[20px]"
+              className="mt-[20px] flex justify-center items-center px-[15px] sm:px-[60px] sm:py-[20px]"
               data-aos="zoom-in-up"
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              <div className="grid grid-cols-4 gap-[20px]">
+              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
                 {Frontend.map((frontend, index) => (
                   <div
                     key={index}
-                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px]"
+                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
                   >
                     <img src={frontend.imgs} alt="" className="w-[150px]" />
                     <p className="text-[black] mt-[15px] font-medium">
@@ -153,16 +158,16 @@ const Skills = ({ id }) => {
           )}
           {BtnTab === 1 && (
             <div
-              className="mt-[20px] flex justify-center items-center px-[60px] py-[20px]"
+              className="mt-[20px] flex justify-center items-center px-[15px] sm:px-[60px] sm:py-[20px]"
               data-aos="fade-right"
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              <div className="grid grid-cols-4 gap-[20px]">
+              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
                 {Backend.map((backend, index) => (
                   <div
                     key={index}
-                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px]"
+                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
                   >
                     <img src={backend.imgs} alt="" className="w-[150px]" />
                     <p className="text-[black] mt-[15px] font-medium">
@@ -175,69 +180,68 @@ const Skills = ({ id }) => {
           )}
           {BtnTab === 2 && (
             <div
-              className="mt-[20px] flex justify-center items-center px-[60px] py-[20px]"
+              className="mt-[20px] flex justify-center items-center px-[15px] sm:px-[60px] sm:py-[20px]"
               data-aos="fade-right"
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              <div className="grid grid-cols-4 gap-[20px]">
-
-              {Database.map((database, index) => (
-                <div
-                  key={index}
-                  className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px]"
-                >
-                  <img src={database.imgs} alt="" className="w-[150px]" />
-                  <p className="text-[black] mt-[15px] font-medium">
-                    {database.name}
-                  </p>
-                </div>
-              ))}
+              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
+                {Database.map((database, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
+                  >
+                    <img src={database.imgs} alt="" className="w-[150px]" />
+                    <p className="text-[black] mt-[15px] font-medium">
+                      {database.name}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           )}
           {BtnTab === 3 && (
             <div
-              className="mt-[20px] flex justify-center items-center px-[60px] py-[20px]"
+              className="mt-[20px] flex justify-center items-center px-[15px] sm:px-[60px] sm:py-[20px]"
               data-aos="fade-right"
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              <div className="grid grid-cols-4 gap-[20px]">
-              {Languages.map((language, index) => (
-                <div
-                  key={index}
-                  className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px]"
-                >
-                  <img src={language.imgs} alt="" className="w-[150px]" />
-                  <p className="text-[black] mt-[15px] font-medium">
-                    {language.name}
-                  </p>
-                </div>
-              ))}
-            </div>
+              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
+                {Languages.map((language, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
+                  >
+                    <img src={language.imgs} alt="" className="w-[150px]" />
+                    <p className="text-[black] mt-[15px] font-medium">
+                      {language.name}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
           {BtnTab === 4 && (
             <div
-              className="mt-[20px] flex justify-center items-center px-[60px] py-[20px]"
+              className="mt-[20px] flex justify-center items-center px-[15px] sm:px-[60px] sm:py-[20px]"
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              <div className="grid grid-cols-4 gap-[20px]">
-              {Others.map((other, index) => (
-                <div
-                  key={index}
-                  className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px]"
-                >
-                  <img src={other.imgs} alt="" className="w-[150px]" />
-                  <p className="text-[black] mt-[15px] font-medium">
-                    {other.name}
-                  </p>
-                </div>
-              ))}
-            </div>
+              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
+                {Others.map((other, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
+                  >
+                    <img src={other.imgs} alt="" className="w-[150px]" />
+                    <p className="text-[black] mt-[15px] font-medium">
+                      {other.name}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
         </div>
