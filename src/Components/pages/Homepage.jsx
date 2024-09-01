@@ -25,14 +25,14 @@ const Homepage = ({id}) => {
               <h1
                 data-aos="fade-left"
                 data-aos-duration="1000"
-                className="name text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] 2xl:text-[100px] font-bold text-center"
+                className="name text-[40px] sm:text-[50px] md:text-[50px] lg:text-[60px] xl:text-[70px] 2xl:text-[100px] font-bold text-center"
               >
                 𝑫𝒆𝒗𝒆𝒏𝒅𝒓𝒂 𝑲𝒖𝒎𝒂𝒓 𝑷𝒂𝒏𝒅𝒊𝒕
               </h1>
               <p
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                className="job_title text-[50px] md:text-[60px] lg:text-[70px] xl:text-[80px] 2xl:text-[100px] text-[white] text-center mt-[30px] md:mt-[60px]"
+                className="job_title text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] xl:text-[80px] 2xl:text-[100px] text-[white] text-center mt-[30px] md:mt-[60px]"
               >
                 ₛₒ<span className="text-[yellow]">f</span>ₜ
                 <span className="text-[#00f7ff]">w</span>ₐᵣₑ{" "}

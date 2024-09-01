@@ -15,12 +15,12 @@ const Projects = ({ id }) => {
       projectname: "Applicant Tracking system(ATS)",
       company: "Otomashen It Services Pvt. Ltd.",
       date: "21/05/2024 - Present",
-      aboutprject: `The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.
-      The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.
-      The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.`,
-      myrole: "Frontend",
+      aboutprject: `Developed and enhanced dashboards for an Applicant Tracking System (ATS) platform, focusing on the front-end
+      after initially working on back-end development. Gained hands-on experience with Material UI, Redux Toolkit, and Django Framework, contributing to both
+      front-end and back-end aspects. Implemented key features, improving the platform’s overall user experience and functionality.`,
+      myrole: "Full-Stack",
       tecnology:
-        "HTML5, CSS3, JavaScript, React.js, Tailwind, Material UI, Redux Toolkit",
+        "HTML5, CSS3, JavaScript, React.js, Tailwind, Material UI, Redux Toolkit, Python(Django).",
       imgs: "/splash.svg",
       url: "https://www.uredx.com/",
     },
@@ -66,42 +66,55 @@ const Projects = ({ id }) => {
         {ProjectDetails.map((project, index) => (
           <div
             key={index}
+             data-aos="zoom-in"
+             data-aos-duration="2000"
             className="flex justify-center relative sm:h-[calc(100vh-100px)] mt-[30px] px-[150px]"
           >
-            <div className="bg-[#204ba7] flex justify-end sm:ml-[150px] md:ml-[160px] lg:ml-[170px] xl:ml-[180px] 2xl:ml-[200px] min-w-[380px] sm:min-w-[500px] md:min-w-[600px] lg:min-w-[700px] xl:min-w-[800px] 2xl:min-w-[900px] h-[350px] rounded-xl sm:rounded-3xl px-[10px] py-[10px]">
-              <div className="w-full xl:w-[540px] px-[10px]">
-                <h1 className="text-[22px] font-bold">
+            <div className="project_info flex justify-end sm:ml-[150px] md:ml-[160px] lg:ml-[170px] xl:ml-[180px] 2xl:ml-[200px] min-w-[350px] sm:min-w-[500px] md:min-w-[600px] lg:min-w-[700px] xl:min-w-[800px] 2xl:min-w-[900px] sm:h-[350px] rounded-xl sm:rounded-3xl">
+              <div className="w-full sm:w-[330px] md:w-[360px] lg:w-[500px] xl:w-[520px] px-[10px] py-[10px]">
+                <h1 className="text-[20px] sm:text-[20px] md:text-[22px] lg:text-[26px] xl:text-[28px] 2xl:text-[30px] font-bold">
                   {project.projectname}
                 </h1>
-                <div className="text-[white]">
-                  <div className="font-medium">
-                    <span className="font-bold">Company</span> :{" "}
-                    {project.company}
+                <div className="text-[#eae8e8]">
+                  <div className="font-bold">
+                    Company :{" "}
+                    <span className="font-medium text-[#ffffffca] text-[16px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[18px] 2xl:text-[20px]">
+                      {project.company}
+                    </span>
                   </div>
-                  <h1 className="font-semibold">{project.date}</h1>
-                  <div className="font-medium">
-                    <span className="font-bold">Role</span> :{" "}
-                    {project.myrole}
+                  <h1 className="font-semibold text-[#f2d2d2]">{project.date}</h1>
+                  <div className="font-bold">
+                    Role :{" "}
+                    <span className="font-medium text-[#ffffffd9]">
+                      {project.myrole}
+                    </span>
                   </div>
-                  <div className="font-medium">
-                    <span className="font-bold">Technologies</span>{" "}
-                    : {project.tecnology}
+                  <div className="font-bold leading-[20px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] xl:leading-[18px] 2xl:leading-[20px]">
+                    Technologies:{" "}
+                    <span className="font-medium text-[#ffffffd9] text-[16px] sm:text-[14px] md:text-[14px] lg:text-[14px] xl:text-[15px] 2xl:text-[17px]">
+                      {project.tecnology}
+                    </span>
                   </div>
-                  <div className="font-medium  text-[14px] leading-[18px]">
-                    <span className="font-bold">
-                      Responsibility
-                    </span>{" "}
-                    : {project.aboutprject}
+                  <div className="font-bold mt-[5px] leading-[18px] sm:leading-[16px] md:leading-[17px] lg:leading-[17px] xl:leading-[18px] 2xl:leading-[20px]">
+                    Responsibility :{" "}
+                    <span className="font-medium text-[#ffffffd9] text-[16px] sm:text-[14px] md:text-[14px] lg:text-[14px] xl:text-[15px] 2xl:text-[17px]">
+                      {project.aboutprject}
+                    </span>
                   </div>
                 </div>
-                <div className="flex justify-center items-center mt-[30px] sm:hidden">
-                <button className="border-[1px] border-[white] px-[20px] py-[5px] font-medium text-[white] rounded" onClick={() => HandleDemo(project.url)}>Site Link</button>
+                <div className="flex justify-center items-center mt-[20px] sm:hidden">
+                  <button
+                    className="border-[1px] border-[white] px-[20px] py-[5px] font-medium text-[white] rounded"
+                    onClick={() => HandleDemo(project.url)}
+                  >
+                    Site Link
+                  </button>
                 </div>
               </div>
             </div>
             <div
-              className="project absolute hidden sm:block m-auto overflow-hidden top-[250px] sm:top-[100px] md:top-[80px] lg:top-[40px] xl:top-[40px] 2xl:top-[40px]
-             left-[5px] sm:left-[10px] md:left-[100px] lg:left-[120px] xl:left-[160px] 2xl-[180px]"
+              className="project absolute hidden sm:block m-auto overflow-hidden top-[250px] sm:top-[100px] md:top-[100px] lg:top-[80px] xl:top-[40px] 2xl:top-[40px]
+             left-[5px] sm:left-[10px] md:left-[70px] lg:left-[90px] xl:left-[160px] 2xl-[180px]"
             >
               <img
                 src={project.imgs}
@@ -110,8 +123,8 @@ const Projects = ({ id }) => {
               />
             </div>
             <div
-              className="project hidden sm:block absolute top-[310px] sm:top-[330px] md:top-[320px] lg:top-[320px] xl:top-[360px] 2xl:top-[310px]
-             left-[95px] sm:left-[220px] md:left-[340px] lg:left-[360px]  xl:left-[500px] 2xl:left-[95px]
+              className="project hidden sm:block absolute top-[310px] sm:top-[330px] md:top-[340px] lg:top-[360px] xl:top-[360px] 2xl:top-[310px]
+             left-[95px] sm:left-[220px] md:left-[300px] lg:left-[320px]  xl:left-[500px] 2xl:left-[95px]
              sm:w-[100px] md:w-[120px] lg:w-[120px] xl:w-[150px] 2xl:w-[160px] sm:h-[100px] md:h-[120px] lg:h-[120px] xl:h-[150px] 2xl-[160px] bg-[#9e169c]"
             ></div>
           </div>
