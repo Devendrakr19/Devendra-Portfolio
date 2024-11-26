@@ -39,6 +39,9 @@ const Contact = ({ id }) => {
                   <p className="text-[#ffffff]">{item.link}</p>
                 </div>
               ))}
+                <div className="flex justify-center items-center mt-[30px]">
+                  <button onClick={()=> window.open("./Devendra_Res.pdf", "_blank")} className="text-[#ffffff] bg-[#16ff8767] px-[10px] py-[4px] rounded transition-all duration-500 ease-in-out hover:text-[black] hover:bg-[#16ff87]">View Resume</button>
+                </div>
             </div>
           </div>
           <div className="mt-[30px] sm:mt-[0px]">

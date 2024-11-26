@@ -12,7 +12,7 @@ const Navbar = () => {
   const navContent = [
     { title: "Home", id: "homepage" },
     { title: "About", id: "about" },
-    { title: "Projects", id: "projects" },
+    { title: "Work", id: "projects" },
     { title: "Skills", id: "skills" },
     { title: "Contact", id: "contact" },
   ];
