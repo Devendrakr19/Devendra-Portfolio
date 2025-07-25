@@ -81,10 +81,10 @@ const Homepage = ({ id }) => {
                   I'm <span className="underline">Devendra Kumar Pandit</span>
                 </h1>
                 <p className="mt-[10px] text-[#323131]">
-                  A software developer who creates, constructs, and manages
-                  programs that use code to address real-world issues. I use a
-                  variety of technologies and frameworks to develop software
-                  that is effective, scalable, and easy to use. I work in
+                  A software developer who creates, builds, and maintains web
+                  applications that solve real-world problems using code. I work
+                  with modern technologies and frameworks to develop
+                  user-friendly, scalable, and efficient interfaces. I work in
                   groups, troubleshoot problems, and keep learning how to adjust
                   to changing user requirements and technological advancements.
                 </p>
