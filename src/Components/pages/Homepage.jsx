@@ -1,43 +1,94 @@
 import React from "react";
 import Navbar from "../Navbar";
 
-const Homepage = ({id}) => {
+const Homepage = ({ id }) => {
   return (
     <>
-      <div id={id} className="bg_img">
-        <Navbar/>
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-[60px] md:mt-[80px] gap-[20px] px-[20px] pt-[20px] pb-[80px] md:pb-[150px]">
-          <div className="col-span-1">
-            <div className="flex justify-center items-center">
-              <div className="max-w-[550px]">
-                <img
-                  src="/Devendra_img.webp"
-                  data-aos="zoom-in-up"
-                  data-aos-duration="2000"
-                  alt=""
-                  className="box_shodow object-cover rounded-3xl"
-                />
+      <div id={id} className="bg-[#64861c] p-[60px]">
+        <div className="bg-[#bec0b5]">
+          <Navbar />
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="col-span-2 relative flex justify-end items-end h-[650px]">
+              <div
+                class="circle-text-wrapper will-change-transform"
+                data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="2000"
+              >
+                <svg viewBox="0 0 200 200">
+                  <defs>
+                    <path
+                      id="circlePath"
+                      d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"
+                      fill="none"
+                    />
+                  </defs>
+                  <text textLength="500" lengthAdjust="spacing">
+                    <textPath href="#circlePath" startOffset="0%">
+                      &nbsp;WORK HARD, SUCCESS, DREAM BIG,
+                    </textPath>
+                  </text>
+                </svg>
+                <div class="center-icon">🎯</div>
+              </div>
+              <div className="flex justify-around w-[100%] h-[500px]">
+                <div
+                  className="mt-[200px]"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
+                  <div className="flex items-center gap-[5px]">
+                    <span className="text-[#323131]">HI THERE</span>
+                    <span className="block w-[100px] h-[1px] bg-[#323131]"></span>
+                  </div>
+                  <p className="text-[black] text-[50px] font-mono">
+                    lets think
+                  </p>
+                  <p className="text-[76px] leading-[40px] text-[#1daf81] font-bold">
+                    creative
+                  </p>
+                </div>
+                <div className="relative">
+                  <div
+                    className="w-[270px] h-[300px] bg-[red] object-contain relative z-20"
+                    data-aos="zoom-out-down"
+                    data-aos-duration="2000"
+                  >
+                    <img
+                      src="/selfimg.jpeg"
+                      alt="no img"
+                      className="w-full h-full object-cover object-top filter brightness-75"
+                    />
+                  </div>
+                  <div
+                    className="absolute top-[100px] right-[80px] w-[270px] h-[300px] bg-[#3a8b2d] z-10"
+                    data-aos="zoom-out-up"
+                    data-aos-duration="2000"
+                  ></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-span-1">
-            <div className="">
-              <h1
+            <div className="col-span-1 flex justify-center flex-col h-full">
+              <div
+                className="mt-[-120px] pr-[50px]"
                 data-aos="fade-left"
-                data-aos-duration="1000"
-                className="name text-[40px] sm:text-[40px] md:text-[40px] lg:text-[50px] xl:text-[60px] 2xl:text-[90px] font-bold text-center"
+                data-aos-anchor="#example-anchor"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
               >
-                𝑫𝒆𝒗𝒆𝒏𝒅𝒓𝒂 𝑲𝒖𝒎𝒂𝒓 𝑷𝒂𝒏𝒅𝒊𝒕
-              </h1>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                className="job_title text-[40px] sm:text-[50px] md:text-[50px] lg:text-[70px] xl:text-[80px] 2xl:text-[100px] text-[white] text-center mt-[30px] md:mt-[60px]"
-              >
-                ₛₒ<span className="text-[yellow]">f</span>ₜ
-                <span className="text-[#00f7ff]">w</span>ₐᵣₑ{" "}
-                <span className="text-[#00ffaa]">D</span>ₑᵥₑₗₒₚₑᵣ
-              </p>
+                <h1 className="text-[26px]">
+                  I'm <span className="underline">Devendra Kumar Pandit</span>
+                </h1>
+                <p className="mt-[10px] text-[#323131]">
+                  A software developer who creates, constructs, and manages
+                  programs that use code to address real-world issues. I use a
+                  variety of technologies and frameworks to develop software
+                  that is effective, scalable, and easy to use. I work in
+                  groups, troubleshoot problems, and keep learning how to adjust
+                  to changing user requirements and technological advancements.
+                </p>
+              </div>
             </div>
           </div>
         </div>
