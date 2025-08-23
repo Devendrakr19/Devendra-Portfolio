@@ -29,9 +29,8 @@ const Navbar = () => {
   // };
 
   return (
-    <>
-      <div className="flex justify-center">
-        <div className="mt-[20px] flex justify-between items-center w-[100%] px-[40px]">
+    <> 
+        <div className="pt-[20px] pb-[15px] flex justify-between items-center w-[100%] px-[40px]">
           <div
             className="text-[#1daf81] text-[26px] font-extrabold font-mono"
             data-aos="fade-right"
@@ -72,8 +71,7 @@ const Navbar = () => {
               <FaLinkedin className="cursor-pointer hover:text-[blue] transition-all ease-in-out delay-75 hover:scale-125" />
             </Link>
           </div>
-        </div>
-      </div>
+        </div> 
     </>
   );
 };

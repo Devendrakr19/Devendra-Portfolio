@@ -1,16 +1,13 @@
-import React from "react";
-import Navbar from "../Navbar";
+import Projects  from "./Projects";
 
-const Homepage = ({ id }) => {
+const Homepage = () => {
   return (
     <>
-      <div id={id} className="bg-[#64861c] p-[60px]">
-        <div className="bg-[#bec0b5]">
-          <Navbar />
+        <div className="bg-[#bec0b5] pt-[20px] overflow-hidden" id="homepage"> 
           <div className="grid grid-cols-1 md:grid-cols-3">
-            <div className="col-span-2 relative flex justify-end items-end h-[650px]">
+            <div className="col-span-2 relative flex justify-end items-end h-[580px]">
               <div
-                class="circle-text-wrapper will-change-transform"
+                className="circle-text-wrapper will-change-transform"
                 data-aos="zoom-in"
                 data-aos-easing="linear"
                 data-aos-duration="2000"
@@ -31,7 +28,7 @@ const Homepage = ({ id }) => {
                 </svg>
                 <div class="center-icon">🎯</div>
               </div>
-              <div className="flex justify-around w-[100%] h-[500px]">
+              <div className="flex justify-around w-[100%] h-[450px]">
                 <div
                   className="mt-[200px]"
                   data-aos="fade-up"
@@ -91,8 +88,8 @@ const Homepage = ({ id }) => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+          <Projects id="projects" />
+        </div> 
     </>
   );
 };
