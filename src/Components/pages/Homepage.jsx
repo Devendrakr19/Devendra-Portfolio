@@ -1,3 +1,4 @@
+import Experience from "./Experience";
 import Projects  from "./Projects";
 
 const Homepage = () => {
@@ -88,6 +89,7 @@ const Homepage = () => {
               </div>
             </div>
           </div>
+          <Experience id="experience"/>
           <Projects id="projects" />
         </div> 
     </>
