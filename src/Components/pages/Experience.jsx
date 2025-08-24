@@ -21,7 +21,7 @@ const Experience = ({ id }) => {
   ];
   return (
     <>
-      <div id={id} className="pb-[60px]">
+      <div id={id} className="pb-[100px]">
         <h1 className="component_title underline">Experience</h1>
         <div className="relative p-[30px]">
           {ExperienceDetails.map((item, index) => (
@@ -35,16 +35,16 @@ const Experience = ({ id }) => {
               {/*  .........left line........ */}
               {index % 2 === 0 && (
                 <span
-                  className={`absolute left-[470px] w-[150px] h-[2px] block bg-[#3a8b2d]`}
-                  style={{ top: `${37 + index * 165}px` }}
+                  className={`absolute w-[150px] h-[2px] block bg-[#3a8b2d]`}
+                  style={{ top: `${37 + index * 165}px`, left: "539px"}}
                 ></span>
               )}
 
               {/*  .........right line........ */}
               {index % 2 !== 0 && (
                 <span
-                  className={`absolute right-[470px] w-[150px] h-[2px] block bg-[#3a8b2d]`}
-                  style={{ top: `${37 + index * 165}px` }}
+                  className={`absolute w-[150px] h-[2px] block bg-[#3a8b2d]`}
+                  style={{ top: `${37 + index * 165}px`, right: "539px"}}
                 ></span>
               )}
 
@@ -54,7 +54,7 @@ const Experience = ({ id }) => {
                   className={`absolute flex flex-col max-w-[445px]`}
                   style={{
                     top: `${25 + index * 165}px`,
-                    left: "20px",
+                    left: "85px",
                     direction: "rtl",
                   }}
                 >
@@ -72,8 +72,8 @@ const Experience = ({ id }) => {
               {/*  .........Right content Div........ */}
               {index % 2 !== 0 && (
                 <div
-                  className={`absolute right-[60px] flex flex-col`}
-                  style={{ top: `${25 + index * 165}px` }}
+                  className={`absolute flex flex-col`}
+                  style={{ top: `${25 + index * 165}px`, right:"130px" }}
                 >
                   <span>
                     {" "}

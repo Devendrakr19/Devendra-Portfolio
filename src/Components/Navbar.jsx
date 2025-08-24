@@ -15,10 +15,11 @@ const Navbar = () => {
   };
   const navContent = [
     { title: "Home", id: "homepage" },
-    { title: "Work", id: "experience" },
+    { title: "Experience", id: "experience" },
+    { title: "Project", id: "project" },
     { title: "Skills", id: "skills" },
     { title: "About", id: "about" },
-    { title: "Contact", id: "contact" },
+    // { title: "Contact", id: "contact" },
   ];
 
   // const HandleDropdown = () => {

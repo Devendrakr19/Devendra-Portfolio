@@ -114,7 +114,7 @@ const Skills = ({ id }) => {
     <>
       <div
         id={id}
-        className=""
+        className="pb-[40px]"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
@@ -140,12 +140,12 @@ const Skills = ({ id }) => {
           </div>
           {BtnTab === 0 && (
             <div
-              className="mt-[20px] flex justify-center items-center px-[15px] sm:px-[60px] sm:py-[20px]"
+              className="mt-[20px] flex justify-center px-[15px] sm:px-[60px] sm:py-[20px] items-center" 
               data-aos="zoom-in-up"
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
+              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[20px]">
                 {Frontend.map((frontend, index) => (
                   <div
                     key={index}
@@ -167,7 +167,7 @@ const Skills = ({ id }) => {
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
+              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[20px]">
                 {Backend.map((backend, index) => (
                   <div
                     key={index}
@@ -189,7 +189,7 @@ const Skills = ({ id }) => {
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
+              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[20px]">
                 {Database.map((database, index) => (
                   <div
                     key={index}
@@ -211,7 +211,7 @@ const Skills = ({ id }) => {
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
+              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[20px]">
                 {Languages.map((language, index) => (
                   <div
                     key={index}
@@ -233,7 +233,7 @@ const Skills = ({ id }) => {
               data-aos-delay="500"
               data-aos-duration="1000"
             >
-              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
+              <div className="flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[20px]">
                 {Others.map((other, index) => (
                   <div
                     key={index}

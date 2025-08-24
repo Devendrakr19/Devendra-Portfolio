@@ -1,4 +1,6 @@
+import About from "./About";
 import Experience from "./Experience";
+import Footer from "./Footer";
 import Projects  from "./Projects";
 import Skills from "./Skills";
 
@@ -50,7 +52,7 @@ const Homepage = () => {
                 </div>
                 <div className="relative">
                   <div
-                    className="w-[270px] h-[300px] bg-[red] object-contain relative z-20"
+                    className="w-[270px] h-[300px] object-contain relative z-20"
                     data-aos="zoom-out-down"
                     data-aos-duration="2000"
                   >
@@ -91,8 +93,10 @@ const Homepage = () => {
             </div>
           </div>
           <Experience id="experience"/>
-          <Projects id="projects" />
+          <Projects id="project" />
           <Skills id="skills" />
+          <About id="about" />
+          <Footer/>
         </div> 
     </>
   );

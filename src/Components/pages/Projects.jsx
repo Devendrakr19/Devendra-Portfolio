@@ -59,13 +59,13 @@ const Projects = ({ id }) => {
       <div id={id} className="pb-[60px]">
         <h1 className="component_title underline">Projects</h1>
         <div
-          className={`flex flex-wrap items-center gap-[40px] mt-[20px] px-[60px] ${
+          className={`flex flex-wrap items-center gap-[20px] mt-[20px] px-[110px] ${
             ProjectDetails.length === 3 ? "justify-center" : ""
           }`}
         >
           {ProjectDetails.map((item, index) => (
-            <div key={index} className="relative z-50 mb-[30px]">
-              <div className="p-[20px] w-[250px] h-[250px] bg-[#d5d4d4] z-20">
+            <div key={index} className="relative z-50">
+              <div className="p-[20px] w-[280px] h-[280px] border-[1px] border-[#999898] bg-[#ffffff1a] z-20 rounded hover:bg-[#75937538] transition-all delay-75">
                 <h1 className="text-[18px] font-bold truncate">{item?.title}</h1>
                 <div className="relative group w-fit">
                   <p className="truncate max-w-[200px] cursor-pointer">
@@ -76,31 +76,28 @@ const Projects = ({ id }) => {
                     {item.tecnology}
                   </span>
                 </div>
-                <div className="w-[100%] h-[100px] mt-[10px]">
+                <div className="w-[100%] h-[110px] mt-[10px] overflow-hidden">
                   <img
                     src={item?.img}
                     alt="img"
-                    className="w-[100%] object-cover "
+                    className="object-cover object-center"
                   />
                 </div>
-                <div className="w-full flex items-center justify-between mt-[15px]">
+                <div className="w-full flex items-center justify-between mt-[20px]">
                   <button
-                    className="border-none bg-[#b3c1c7] hover:bg-[#939fa4] transition-all delay-75 px-[15px] py-[5px] rounded"
+                    className="border-none bg-[#cbcaca] shadow hover:bg-[#c1d6c4] transition-all delay-75 px-[15px] py-[5px] rounded"
                     onClick={() => handleDemo(item?.demo)}
                   >
                     Live Demo
                   </button>
                   <button
-                    className="border-none bg-[#b3c1c7] hover:bg-[#939fa4] transition-all delay-75 px-[15px] py-[5px] rounded"
+                    className="border-none bg-[#cbcaca] shadow hover:bg-[#c1d6c4] transition-all delay-75 px-[15px] py-[5px] rounded"
                     onClick={() => handleGithub(item?.github)}
                   >
                     GitHub
                   </button>
                 </div>
-              </div>
-              <div
-                className={`absolute top-[15px] left-[-15px] w-[250px] h-[250px] bg-[#57756b] -z-10`}
-              ></div>
+              </div> 
             </div>
           ))}
         </div>
