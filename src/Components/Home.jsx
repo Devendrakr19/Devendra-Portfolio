@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <div className="bg-[#64861c] p-[60px]">
-         <div className="sticky top-0 z-40 bg-[#bec0b5]">
+         <div className="sticky top-0 z-[999] bg-[#bec0b5]">
           <Navbar/> 
          </div>
         <Homepage/>

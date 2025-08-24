@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Experience = ({id}) => {
-      const ExperienceDetails = [
+const Experience = ({ id }) => {
+  const ExperienceDetails = [
     {
       company: "Otomashen It Services",
       date: "DEC 2024 - Present",
@@ -21,21 +21,21 @@ const Experience = ({id}) => {
   ];
   return (
     <>
-    <div id={id} className="pb-[60px]">
+      <div id={id} className="pb-[60px]">
         <h1 className="component_title underline">Experience</h1>
         <div className="relative p-[30px]">
           {ExperienceDetails.map((item, index) => (
             <div key={index} className="flex items-center flex-col">
-              <span className="w-[15px] h-[15px] block bg-[#484747] rounded-full"></span>
+              <span className="w-[15px] h-[15px] block bg-[#3a8b2d] rounded-full"></span>
               {index !== ExperienceDetails.length - 1 ? (
-                <span className="w-[2px] h-[150px] block bg-[#484747]"></span>
+                <span className="w-[2px] h-[150px] block bg-[#3a8b2d]"></span>
               ) : (
                 ""
               )}
               {/*  .........left line........ */}
               {index % 2 === 0 && (
                 <span
-                  className={`absolute left-[470px] w-[150px] h-[2px] block bg-[#484747]`}
+                  className={`absolute left-[470px] w-[150px] h-[2px] block bg-[#3a8b2d]`}
                   style={{ top: `${37 + index * 165}px` }}
                 ></span>
               )}
@@ -43,7 +43,7 @@ const Experience = ({id}) => {
               {/*  .........right line........ */}
               {index % 2 !== 0 && (
                 <span
-                  className={`absolute right-[470px] w-[150px] h-[2px] block bg-[#484747]`}
+                  className={`absolute right-[470px] w-[150px] h-[2px] block bg-[#3a8b2d]`}
                   style={{ top: `${37 + index * 165}px` }}
                 ></span>
               )}
@@ -60,7 +60,7 @@ const Experience = ({id}) => {
                 >
                   <span>
                     <span className="font-bold">{item?.company}</span>
-                    <span className='text-[14px]'>{" "}({item?.date})</span>
+                    <span className="text-[14px]"> ({item?.date})</span>
                   </span>
                   <ul className="list-disc pr-[15px] text-[15px] font-thin">
                     <li>{item?.myrole}</li>
@@ -78,7 +78,7 @@ const Experience = ({id}) => {
                   <span>
                     {" "}
                     <span className="font-bold">{item?.company}</span>
-                    <span className='text-[14px]'>{" "}({item?.date})</span>
+                    <span className="text-[14px]"> ({item?.date})</span>
                   </span>
                   <ul className="list-disc pl-[15px] max-w-[400px] text-[15px] font-thin">
                     <li>{item?.myrole}</li>
@@ -91,8 +91,8 @@ const Experience = ({id}) => {
           ))}
         </div>
       </div>
-     </>
-  )
-}
+    </>
+  );
+};
 
-export default Experience
+export default Experience;

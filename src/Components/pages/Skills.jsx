@@ -32,6 +32,10 @@ const Skills = ({ id }) => {
       imgs: "/logo/react.svg",
       name: "React js",
     },
+      {
+      imgs: "/logo/next.svg",
+      name: "Next js",
+    },
     {
       imgs: "/logo/mui.svg",
       name: "Material ui",
@@ -110,13 +114,13 @@ const Skills = ({ id }) => {
     <>
       <div
         id={id}
-        className="mt-[50px]"
+        className=""
         data-aos="fade-up"
         data-aos-duration="1000"
       >
         <div className="">
-          <h1 className="component_title">Skills</h1>
-          <div className="text-[white] flex justify-center gap-[5px] sm:gap-[1px] md:gap-[10px] lg:gap-[30px] xl:gap-[50px] 2xl:gap-[70px]">
+          <h1 className="component_title underline">Skills</h1>
+          <div className="flex justify-center gap-[5px] sm:gap-[1px] md:gap-[10px] lg:gap-[30px] xl:gap-[50px] 2xl:gap-[70px]">
             {ButtonTab.map((item, index) => (
               <button
                 key={index}
@@ -125,7 +129,7 @@ const Skills = ({ id }) => {
                  px-[8px] sm:px-[20px]  py-[5px]
                 ${
                   BtnTab === index
-                    ? "border-b-[3px] border-[red] text-[yellow]"
+                    ? "border-b-[3px] border-[#1daf81]"
                     : ""
                 }
                 `}
@@ -145,7 +149,7 @@ const Skills = ({ id }) => {
                 {Frontend.map((frontend, index) => (
                   <div
                     key={index}
-                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
+                    className="border-[1px] border-[#999898] bg-[#ffffff1a] cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
                   >
                     <img src={frontend.imgs} alt="" className="w-[150px]" />
                     <p className="text-[black] mt-[15px] font-medium">
@@ -167,7 +171,7 @@ const Skills = ({ id }) => {
                 {Backend.map((backend, index) => (
                   <div
                     key={index}
-                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
+                    className="border-[1px] border-[#999898] bg-[#ffffff1a] cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
                   >
                     <img src={backend.imgs} alt="" className="w-[150px]" />
                     <p className="text-[black] mt-[15px] font-medium">
@@ -189,7 +193,7 @@ const Skills = ({ id }) => {
                 {Database.map((database, index) => (
                   <div
                     key={index}
-                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
+                    className="border-[1px] border-[#999898] bg-[#ffffff1a] cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
                   >
                     <img src={database.imgs} alt="" className="w-[150px]" />
                     <p className="text-[black] mt-[15px] font-medium">
@@ -211,7 +215,7 @@ const Skills = ({ id }) => {
                 {Languages.map((language, index) => (
                   <div
                     key={index}
-                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
+                    className="border-[1px] border-[#999898] bg-[#ffffff1a] cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
                   >
                     <img src={language.imgs} alt="" className="w-[150px]" />
                     <p className="text-[black] mt-[15px] font-medium">
@@ -233,7 +237,7 @@ const Skills = ({ id }) => {
                 {Others.map((other, index) => (
                   <div
                     key={index}
-                    className="bg-[#ffffff] skills cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
+                    className="border-[1px] border-[#999898] bg-[#ffffff1a] cursor-pointer rounded flex justify-center items-center flex-col w-[220px] h-[200px] shrink-0 snap-start"
                   >
                     <img src={other.imgs} alt="" className="w-[150px]" />
                     <p className="text-[black] mt-[15px] font-medium">

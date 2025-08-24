@@ -18,6 +18,7 @@ p {
   font-size: 40px;
   text-align: center;
   font-family: monospace;
+  color: #1d1d1d;
 }
 
 .bg_img {
@@ -158,8 +159,6 @@ p {
   }
 }
 
-.project_card{ 
-  /* box-shadow: #00000073 -5px 0px 20px 0px; */
-  
+.project_card{    
   box-shadow: rgba(67, 71, 85, 0.27) 2px -1px 0.50em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
