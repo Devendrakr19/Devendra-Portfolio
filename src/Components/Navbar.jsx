@@ -4,13 +4,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  // const [openSidebar, setopenSidebar] = useState(false);
-  // const [NavTab, setNavTab] = useState(0);
-
-  const HandleNav = (index, id) => {
-    // setNavTab(index);
-    // setopenSidebar(false);
+const Navbar = () => { 
+  const HandleNav = (index, id) => { 
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
   const navContent = [
@@ -18,16 +13,8 @@ const Navbar = () => {
     { title: "Experience", id: "experience" },
     { title: "Project", id: "project" },
     { title: "Skills", id: "skills" },
-    { title: "About", id: "about" },
-    // { title: "Contact", id: "contact" },
-  ];
-
-  // const HandleDropdown = () => {
-  //   setopenSidebar(true);
-  // };
-  // const Handleclose = () => {
-  //   setopenSidebar(false);
-  // };
+    { title: "About", id: "about" }, 
+  ]; 
 
   return (
     <> 
@@ -41,9 +28,9 @@ const Navbar = () => {
           </div>
 
           <div
-            className="flex items-center gap-[30px]"
-            data-aos="fade-down"
-            data-aos-duration="1000"
+            className="md:flex items-center hidden sm:gap-[10px] md:gap-[10px] lg:gap-[15px] xl:gap-[25px] 2xl:gap-[30px]"
+            // data-aos="fade-down"
+            // data-aos-duration="1000"
           >
             {navContent.map((content, index) => (
               <div
@@ -71,6 +58,9 @@ const Navbar = () => {
             <Link to="">
               <FaLinkedin className="cursor-pointer hover:text-[blue] transition-all ease-in-out delay-75 hover:scale-125" />
             </Link>
+            <span className="md:hidden">
+            {"="}
+          </span>
           </div>
         </div> 
     </>
