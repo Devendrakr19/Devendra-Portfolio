@@ -30,7 +30,7 @@ const Homepage = () => {
                     </textPath>
                   </text>
                 </svg>
-                <div class="center-icon">🎯</div>
+                <div className="center-icon">🎯</div>
               </div>
               <div className="flex justify-around w-[100%] h-[450px]">
                 <div
