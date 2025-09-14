@@ -35,26 +35,25 @@ const Experience = ({ id }) => {
               {/*  .........left line........ */}
               {index % 2 === 0 && (
                 <span
-                  className={`absolute w-[150px] h-[2px] block bg-[#3a8b2d]`}
-                  style={{ top: `${37 + index * 165}px`, left: "539px"}}
+                  className={`absolute w-[10.5%] sm:w-[6%] md:w-[4%] lg:w-[8.5%] xl:w-[9.5%] 2xl:w-[10.5%] hidden md:block md:left-[45%] lg:left-[41%] xl:left-[39.5%] 2xl:left-[38.6%] h-[2px] bg-[#3a8b2d]`}
+                  style={{ top: `${37 + index * 165}px`}}
                 ></span>
               )}
 
               {/*  .........right line........ */}
               {index % 2 !== 0 && (
                 <span
-                  className={`absolute w-[150px] h-[2px] block bg-[#3a8b2d]`}
-                  style={{ top: `${37 + index * 165}px`, right: "539px"}}
+                  className={`absolute w-[10.5%] sm:w-[6%] md:w-[4%] lg:w-[8.5%] xl:w-[9.5%] 2xl:w-[10.5%] hidden md:block md:right-[46%] lg:right-[41%] xl:right-[39.5%] 2xl:right-[38.6%] h-[2px] bg-[#3a8b2d]`}
+                  style={{ top: `${37 + index * 165}px`}}
                 ></span>
               )}
 
               {/*  .........left content Div........ */}
               {index % 2 === 0 && (
                 <div
-                  className={`absolute flex flex-col max-w-[445px]`}
+                  className={`absolute flex flex-col w-[32%] sm:w-[48%] md:w-[44%] lg:w-[34%] xl:w-[33%] 2xl:w-[32%] sm:left-[0%] md:left-[0%] lg:left-[6%] xl:left-[6%] 2xl:left-[6%]`}
                   style={{
-                    top: `${25 + index * 165}px`,
-                    left: "85px",
+                    top: `${25 + index * 165}px`, 
                     direction: "rtl",
                   }}
                 >
@@ -72,15 +71,15 @@ const Experience = ({ id }) => {
               {/*  .........Right content Div........ */}
               {index % 2 !== 0 && (
                 <div
-                  className={`absolute flex flex-col`}
-                  style={{ top: `${25 + index * 165}px`, right:"130px" }}
+                  className={`absolute flex flex-col w-[30%] sm:w-[47%] md:w-[45%] lg:w-[35%] xl:w-[29%] 2xl:w-[30%] sm:right-[0%] md:right-[0%] lg:right-[5%] xl:right-[10%] 2xl:right-[8%]`}
+                  style={{ top: `${25 + index * 165}px`}}
                 >
                   <span>
                     {" "}
                     <span className="font-bold">{item?.company}</span>
                     <span className="text-[14px]"> ({item?.date})</span>
                   </span>
-                  <ul className="list-disc pl-[15px] max-w-[400px] text-[15px] font-thin">
+                  <ul className="list-disc pl-[15px] text-[15px] font-thin">
                     <li>{item?.myrole}</li>
                     <li className="">{item?.tecnology}</li>
                     {item?.link && <li>{item?.link}</li>}
