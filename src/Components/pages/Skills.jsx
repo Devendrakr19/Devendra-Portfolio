@@ -120,7 +120,7 @@ const Skills = ({ id }) => {
       >
         <div className="">
           <h1 className="component_title underline">Skills</h1>
-          <div className="flex justify-center gap-[5px] sm:gap-[1px] md:gap-[10px] lg:gap-[30px] xl:gap-[50px] 2xl:gap-[70px]">
+          <div className="flex justify-center gap-[2px] sm:gap-[1px] md:gap-[10px] lg:gap-[30px] xl:gap-[50px] 2xl:gap-[70px]">
             {ButtonTab.map((item, index) => (
               <button
                 key={index}

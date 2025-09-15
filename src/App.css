@@ -72,3 +72,13 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.rtl-desktop {
+  direction: rtl;
+}
+
+@media (max-width:640px) {
+  .rtl-desktop {
+    direction: ltr;
+  };
+}

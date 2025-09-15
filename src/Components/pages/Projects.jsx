@@ -56,17 +56,34 @@ const Projects = ({ id }) => {
 
   return (
     <>
-      <div id={id} className="pb-[60px]">
+      <div
+        id={id}
+        className="pb-[60px] flex items-center flex-col mt-[50px] sm:mt-0"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h1 className="component_title underline">Projects</h1>
         <div
-          className={`flex flex-wrap items-center gap-[20px] mt-[20px] px-[110px] ${
-            ProjectDetails.length === 3 ? "justify-center" : ""
-          }`}
+          className={`flex overflow-x-auto scroll-smooth scrollbar_hidden snap-x snap-mandatory gap-[20px] mt-[20px] w-[90%] 
+          ${
+            ProjectDetails.length === 3
+              ? "lg:justify-center xl:justify-center 2xl:justify-center"
+              : ""
+          }
+          ${
+            ProjectDetails.length === 2
+              ? "sm:justify-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center"
+              : ""
+          }
+          ${ProjectDetails.length === 1 ? "justify-center" : ""}
+          `}
         >
           {ProjectDetails.map((item, index) => (
             <div key={index} className="relative z-50">
               <div className="p-[20px] w-[280px] h-[280px] border-[1px] border-[#999898] bg-[#ffffff1a] z-20 rounded hover:bg-[#75937538] transition-all delay-75">
-                <h1 className="text-[18px] font-bold truncate">{item?.title}</h1>
+                <h1 className="text-[18px] font-bold truncate">
+                  {item?.title}
+                </h1>
                 <div className="relative group w-fit">
                   <p className="truncate max-w-[200px] cursor-pointer">
                     {item.tecnology}
@@ -97,7 +114,7 @@ const Projects = ({ id }) => {
                     GitHub
                   </button>
                 </div>
-              </div> 
+              </div>
             </div>
           ))}
         </div>

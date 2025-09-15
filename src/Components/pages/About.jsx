@@ -42,6 +42,10 @@ const About = ({ id }) => {
     },
   ];
 
+  const handleView = () =>{
+    window.open("./Devendra_Res.pdf", "_target");
+  }
+
   return (
     <>
       <div
@@ -51,8 +55,8 @@ const About = ({ id }) => {
         data-aos-duration="1000"
       >
         <h1 className="component_title underline">About</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[40px] mt-[30px] pl-[100px]">
-          <div className=""> 
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[40px] mt-[30px] pl-[30px] sm:pl-[100px]">
+          <div className="">
             {EducationDetails.map((item, index) => (
               <div
                 key={index}
@@ -75,6 +79,11 @@ const About = ({ id }) => {
                 <span>{item?.name}</span>
               </div>
             ))}
+            <div className="mt-[35px]">
+              <button onClick={handleView} className="px-[25px] py-[5px] rounded hover:text-[green] border-[1px] border-[green] hover:bg-[#efeeee] bg-[green] text-[white] transition-all delay-75">
+                View Resume
+              </button>
+            </div>
           </div>
         </div>
       </div>
