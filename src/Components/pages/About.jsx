@@ -43,7 +43,7 @@ const About = ({ id }) => {
   ];
 
   const handleView = () =>{
-    window.open("./Devendra_Res.pdf", "_target");
+    window.open("./Devendra Kumar Pandit.pdf", "_target");
   }
 
   return (

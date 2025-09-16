@@ -17,7 +17,7 @@ const Projects = ({ id }) => {
       github: "",
     },
     {
-      title: "Renting House Application ",
+      title: "GetHome",
       tecnology: "HTML5, CSS3, SCSS, JavaScript, React.js",
       img: "/gethome.webp",
       demo: "",
@@ -79,7 +79,7 @@ const Projects = ({ id }) => {
           `}
         >
           {ProjectDetails.map((item, index) => (
-            <div key={index} className="relative z-50">
+            <div key={index} className="relative">
               <div className="p-[20px] w-[280px] h-[280px] border-[1px] border-[#999898] bg-[#ffffff1a] z-20 rounded hover:bg-[#75937538] transition-all delay-75">
                 <h1 className="text-[18px] font-bold truncate">
                   {item?.title}
@@ -89,7 +89,7 @@ const Projects = ({ id }) => {
                     {item.tecnology}
                   </p>
                   {/* Tooltip */}
-                  <span className="absolute left-[0px] bottom-full mb-1 hidden group-hover:block bg-[#000000d5] text-white text-xs px-2 py-1 rounded shadow-lg z-50">
+                  <span className="absolute left-[0px] top-full hidden group-hover:block bg-[#000000d5] text-white text-xs px-2 py-1 rounded shadow-lg z-50">
                     {item.tecnology}
                   </span>
                 </div>
